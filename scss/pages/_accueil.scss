@@ -23,10 +23,6 @@
     z-index: -1;
 }
 
-h1 {
-    color: $color-primary;
-}
-
 #dates {
     display: flex;
     flex-direction: column;
@@ -37,9 +33,4 @@ h1 {
 .main_title {
     position: absolute;
     top: 40%;
-}
-
-.lien_footer {
-    color: $color-txt2;
-    text-decoration: none;
 }

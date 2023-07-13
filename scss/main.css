@@ -8,12 +8,13 @@
 body {
   font-family: "raleway", sans serif;
   color: #000000;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 h1 {
   font-family: "notable";
   color: #000000;
+  font-size: 5rem;
 }
 
 .main_title {
@@ -22,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -35,15 +36,24 @@ a {
   text-decoration: none;
 }
 
-#bouton {
+ul {
+  list-style-type: none;
+}
+
+.bouton {
   position: absolute;
-  right: 42%;
   background-color: #f7a006;
   text-align: center;
   font-weight: bold;
   border-radius: 30px;
   padding: 1rem 3rem 1rem 3rem;
   font-size: 1.5rem;
+}
+.bouton--accueil {
+  right: 42%;
+}
+.bouton--basic {
+  right: 10%;
 }
 
 .header {
@@ -61,7 +71,7 @@ a {
   background: linear-gradient(black, rgba(255, 0, 0, 0));
 }
 .header--lightgradient {
-  background: linear-gradient(rgb(255, 255, 255), rgba(255, 0, 0, 0));
+  background: linear-gradient(rgb(0, 0, 0), rgba(255, 0, 0, 0));
 }
 .header--lightgradient a {
   color: black;
@@ -71,7 +81,6 @@ a {
 }
 .header__ul {
   display: flex;
-  list-style-type: none;
   align-items: center;
 }
 .header__li {
@@ -147,10 +156,6 @@ span {
   z-index: -1;
 }
 
-h1 {
-  color: #f7a006;
-}
-
 #dates {
   display: flex;
   flex-direction: column;
@@ -162,11 +167,38 @@ h1 {
   top: 40%;
 }
 
-.lien_footer {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 body {
   background-color: #efe1c6;
+}
+
+.txt_intro {
+  padding-top: 4.813rem;
+  padding-bottom: 10rem;
+  width: 60%;
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.body_bio {
+  margin: 0rem 4rem 0rem 4rem;
+  padding-top: 9rem;
+}
+
+.txt_bio {
+  width: 40%;
+}
+
+.diaporama {
+  background-color: black;
+  width: 40%;
+}
+
+.festivals h3 {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

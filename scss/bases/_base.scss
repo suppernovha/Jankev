@@ -6,12 +6,13 @@
 body {
     font-family: "raleway", sans serif;
     color: $color-txt;
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 h1 {
     font-family: 'notable';
     color: $color-txt;
+    font-size: 5rem;
 }
 
 .main_title {
@@ -20,7 +21,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -31,4 +32,8 @@ footer a, header a {
  a { 
     color: $color-txt;
     text-decoration: none;
+ }
+
+ ul {
+    list-style-type: none;
  }
