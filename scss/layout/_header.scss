@@ -1,0 +1,30 @@
+header {
+    position: fixed;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.logo {
+    width: 8%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav li:hover {
+    border: 2px $color-primary solid;
+    border-radius: 30px;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+}
+
