@@ -13,6 +13,11 @@ body {
   padding: 0rem 4rem 2rem 4rem;
 }
 
+main {
+  padding: 7rem 4rem 0rem 4rem;
+
+}
+
 h1 {
   font-family: "notable";
   font-size: 5.875rem;
@@ -29,10 +34,6 @@ a {
   text-decoration: none;
 }
 
-td {
-  font-size: 1.5rem;
-}
-
 .header {
   position: fixed;
   left: 0px;
@@ -44,9 +45,10 @@ td {
   margin-bottom: 12rem;
   padding-top: 1.5rem;
   background: linear-gradient(black, rgba(0, 0, 0, 0));
+  margin: 2rem 4rem 180rem 4rem;
 }
 .header__logo {
-  width: 10%;
+  width: 6%;
 }
 .header__ul {
   display: flex;
@@ -64,12 +66,12 @@ td {
 }
 
 /* Manque le lien surligné de la page en cours */
-footer {
+.footer {
   Background-color: black;
   height: 6rem;
+  margin-top: 6rem;
 }
-
-footer ul {
+.footer__ul {
   display: flex;
   justify-content: space-around;
 }
@@ -79,6 +81,7 @@ footer ul {
   justify-content: center;
   align-items: center;
   height: 35rem;
+  padding-bottom: 8rem;
 }
 
 #video {
@@ -91,6 +94,12 @@ footer ul {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+#dates {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 10rem 0rem 10rem;
 }
 
 .header__li--active {
