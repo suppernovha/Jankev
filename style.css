@@ -38,7 +38,11 @@ a {
   display: flex;
   align-items: center;
   align-content: center;
-  margin: 2rem 4rem 180rem 4rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 12rem;
+  padding-top: 1.5rem;
+  background: linear-gradient(black, rgba(0, 0, 0, 0));
 }
 .header__logo {
   width: 6%;
