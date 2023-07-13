@@ -32,7 +32,7 @@ td {
   font-size: 1.5rem;
 }
 
-header {
+.header {
   position: fixed;
   left: 0px;
   display: flex;
@@ -40,10 +40,10 @@ header {
   align-content: center;
   margin-right: 4rem;
   margin-left: 4rem;
+  margin-bottom: 12rem;
 }
-
-.logo {
-  width: 8%;
+.header__logo {
+  width: 10%;
 }
 
 ul {
@@ -54,12 +54,13 @@ ul {
 
 nav li {
   margin-left: 1rem;
+  border: 2px rgba(0, 0, 0, 0) solid;
+  border-radius: 30px;
+  padding: 0.2rem 0.8rem 0.2rem 0.8rem;
 }
 
 nav li:hover {
   border: 2px #f7a006 solid;
-  border-radius: 30px;
-  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
 }
 
 footer {
@@ -80,6 +81,8 @@ footer ul {
 }
 
 #video {
+  display: none;
+  /* video en pause */
   height: 100vh;
   width: 100vw;
   object-fit: cover;
