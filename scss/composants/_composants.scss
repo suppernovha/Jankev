@@ -13,3 +13,19 @@
         right: 10%;
     }
 }
+
+.form {
+
+    &__row {
+    display: flex;
+    }
+    &__txt {
+    width: 99%;
+    }
+    &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    }
+}

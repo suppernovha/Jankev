@@ -61,6 +61,19 @@ ul {
   right: 10%;
 }
 
+.form__row {
+  display: flex;
+}
+.form__txt {
+  width: 99%;
+}
+.form__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
 .header {
   position: fixed;
   left: 0px;
@@ -135,11 +148,17 @@ span {
   font-weight: bold;
 }
 
-.txt_booking {
+.booking {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 8.9rem;
 }
-.txt_booking__title {
-  margin-bottom: 1.8rem;
+.booking__title {
+  margin-bottom: 1.5rem;
+}
+.booking h3 {
+  margin-bottom: 2rem;
 }
 
 #body_accueil {
