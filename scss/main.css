@@ -28,6 +28,17 @@ a {
   text-decoration: none;
 }
 
+#bouton {
+  position: absolute;
+  right: 42%;
+  background-color: #f7a006;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 1rem 3rem 1rem 3rem;
+  font-size: 1.5rem;
+}
+
 .header {
   position: fixed;
   left: 0px;
@@ -62,7 +73,7 @@ a {
 .footer {
   Background-color: black;
   height: 8rem;
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 .footer__ul {
   display: flex;
