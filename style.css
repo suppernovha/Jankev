@@ -10,7 +10,6 @@ body {
   background: black;
   color: #ffffff;
   font-size: 1.125rem;
-  padding: 0rem 4rem 2rem 4rem;
 }
 
 h1 {
@@ -35,14 +34,14 @@ a {
   display: flex;
   align-items: center;
   align-content: center;
-  margin-right: 4rem;
-  margin-left: 4rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
   margin-bottom: 12rem;
   padding-top: 1.5rem;
-  background: linear-gradient(black, rgba(0, 0, 0, 0));
+  background: linear-gradient(black, rgba(255, 0, 0, 0));
 }
 .header__logo {
-  width: 6%;
+  width: 10%;
 }
 .header__ul {
   display: flex;
@@ -101,7 +100,7 @@ span {
   justify-content: center;
   align-items: center;
   height: 35rem;
-  padding-bottom: 8rem;
+  padding-bottom: 12rem;
 }
 
 #video {
@@ -120,6 +119,11 @@ span {
   display: flex;
   flex-direction: column;
   padding: 0rem 10rem 0rem 10rem;
+}
+
+.main_title {
+  position: absolute;
+  top: 40%;
 }
 
 .header__li--active {

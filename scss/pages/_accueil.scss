@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 35rem;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
 }
 
 #video {
@@ -25,4 +25,7 @@
 
 }
 
-
+.main_title {
+    position: absolute;
+    top: 40%;
+}
