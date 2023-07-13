@@ -8,7 +8,15 @@
     padding-left: 4rem;
     margin-bottom: 12rem;
     padding-top: 1.5rem;
-    background: linear-gradient(black, rgba(255, 0, 0, 0));
+    &--darkgradient {
+        background: linear-gradient(black, rgba(255, 0, 0, 0));
+    }
+    &--lightgradient {
+        background: linear-gradient(rgb(255, 255, 255), rgba(255, 0, 0, 0));
+        & a {
+            color: black;
+        }
+    }
     &__logo {
         width: 10%;
     }

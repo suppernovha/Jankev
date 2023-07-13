@@ -5,15 +5,18 @@
 
 body {
     font-family: "raleway", sans serif;
-    background: black;
-    color: $color-txt2;
+    color: $color-txt;
     font-size: 1.125rem;
 }
 
 h1 {
     font-family: 'notable';
-    font-size: 5.875rem;
+    color: $color-txt;
+}
+
+.main_title {
     color: $color-primary;
+    font-size: 5.875rem;
 }
 
 h2 {
@@ -21,7 +24,11 @@ h2 {
     font-weight: bold;
 }
 
-a {
+footer a, header a {
     color: $color-txt2;
-    text-decoration: none;
 }
+
+ a { 
+    color: $color-txt;
+    text-decoration: none;
+ }
