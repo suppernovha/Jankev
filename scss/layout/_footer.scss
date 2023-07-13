@@ -1,13 +1,11 @@
 .footer {
     Background-color: black;
     height: 6rem;
+    margin-top: 6rem;
     &__ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
         list-style-type: none;
-    }
-    &__li {
-
     }
 }

@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 35rem;
+    padding-bottom: 8rem;
 }
 
 #video {
@@ -16,3 +17,12 @@
     bottom: 0;
     z-index: -1;
 }
+
+#dates {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 10rem 0rem 10rem;
+
+}
+
+
