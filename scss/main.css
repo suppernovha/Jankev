@@ -10,7 +10,7 @@ body {
   background: black;
   color: #ffffff;
   font-size: 1.125rem;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 4rem 0rem 4rem;
 }
 
 h1 {
@@ -62,16 +62,16 @@ td {
 }
 
 /* Manque le lien surligné de la page en cours */
-footer {
+.footer {
   Background-color: black;
   height: 6rem;
 }
-
-footer ul {
+.footer__ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
 }
-
 .section_header {
   display: flex;
   justify-content: center;
