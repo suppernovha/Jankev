@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 35rem;
+    padding-bottom: 12rem;
 }
 
 #video {
@@ -15,4 +16,16 @@
     top: 0;
     bottom: 0;
     z-index: -1;
+}
+
+#dates {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 10rem 0rem 10rem;
+
+}
+
+.main_title {
+    position: absolute;
+    top: 40%;
 }

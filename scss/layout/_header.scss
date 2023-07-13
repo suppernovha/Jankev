@@ -4,9 +4,11 @@
     display: flex;
     align-items: center;
     align-content: center;
-    margin-right: 4rem;
-    margin-left: 4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
     margin-bottom: 12rem;
+    padding-top: 1.5rem;
+    background: linear-gradient(black, rgba(255, 0, 0, 0));
     &__logo {
         width: 10%;
     }

@@ -10,7 +10,6 @@ body {
   background: black;
   color: #ffffff;
   font-size: 1.125rem;
-  padding: 2rem 4rem 0rem 4rem;
 }
 
 h1 {
@@ -29,19 +28,17 @@ a {
   text-decoration: none;
 }
 
-td {
-  font-size: 1.5rem;
-}
-
 .header {
   position: fixed;
   left: 0px;
   display: flex;
   align-items: center;
   align-content: center;
-  margin-right: 4rem;
-  margin-left: 4rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
   margin-bottom: 12rem;
+  padding-top: 1.5rem;
+  background: linear-gradient(black, rgba(255, 0, 0, 0));
 }
 .header__logo {
   width: 10%;
@@ -64,7 +61,8 @@ td {
 /* Manque le lien surligné de la page en cours */
 .footer {
   Background-color: black;
-  height: 6rem;
+  height: 8rem;
+  margin-top: 6rem;
 }
 .footer__ul {
   display: flex;
@@ -72,11 +70,37 @@ td {
   align-items: center;
   list-style-type: none;
 }
+
+.table {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-collapse: collapse;
+  text-align: center;
+}
+.table__td {
+  padding: 3rem 0rem 3rem 0rem;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  font-size: 1.3rem;
+}
+.table a {
+  font-size: 1rem;
+  color: #f7a006;
+}
+
+span {
+  font-weight: bold;
+}
+
 .section_header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 35rem;
+  padding-bottom: 12rem;
 }
 
 #video {
@@ -89,6 +113,17 @@ td {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+#dates {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 10rem 0rem 10rem;
+}
+
+.main_title {
+  position: absolute;
+  top: 40%;
 }
 
 .header__li--active {
