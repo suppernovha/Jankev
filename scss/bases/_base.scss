@@ -15,7 +15,12 @@ h1 {
     font-size: 5rem;
 }
 
-.main_title {
+main {
+    margin: 0rem 4rem 0rem 4rem;
+    padding-top: 9rem;
+}
+
+#main_title {
     color: $color-primary;
     font-size: 5.875rem;
 }

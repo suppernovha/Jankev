@@ -17,7 +17,12 @@ h1 {
   font-size: 5rem;
 }
 
-.main_title {
+main {
+  margin: 0rem 4rem 0rem 4rem;
+  padding-top: 9rem;
+}
+
+#main_title {
   color: #f7a006;
   font-size: 5.875rem;
 }
@@ -130,6 +135,13 @@ span {
   font-weight: bold;
 }
 
+.txt_booking {
+  padding-top: 8.9rem;
+}
+.txt_booking__title {
+  margin-bottom: 1.8rem;
+}
+
 #body_accueil {
   background-color: black;
   color: #ffffff;
@@ -158,7 +170,7 @@ span {
 #dates {
   display: flex;
   flex-direction: column;
-  padding: 0rem 10rem 0rem 10rem;
+  padding: 0rem 6rem 0rem 6rem;
 }
 
 .main_title {
@@ -182,11 +194,6 @@ body {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 10rem;
-}
-
-.body_bio {
-  margin: 0rem 4rem 0rem 4rem;
-  padding-top: 9rem;
 }
 
 .txt_bio {
