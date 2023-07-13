@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Maps */
 * {
   margin: 0;
@@ -45,24 +46,22 @@ td {
 .header__logo {
   width: 10%;
 }
-
-ul {
+.header__ul {
   display: flex;
   list-style-type: none;
   align-items: center;
 }
-
-nav li {
+.header__li {
   margin-left: 1rem;
   border: 2px rgba(0, 0, 0, 0) solid;
   border-radius: 30px;
   padding: 0.2rem 0.8rem 0.2rem 0.8rem;
 }
-
-nav li:hover {
+.header__li:hover {
   border: 2px #f7a006 solid;
 }
 
+/* Manque le lien surligné de la page en cours */
 footer {
   Background-color: black;
   height: 6rem;
@@ -81,8 +80,6 @@ footer ul {
 }
 
 #video {
-  display: none;
-  /* video en pause */
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -92,6 +89,10 @@ footer ul {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.header__li--active {
+  border: 2px #f7a006 solid;
 }
 
 /*# sourceMappingURL=style.css.map */

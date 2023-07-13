@@ -10,23 +10,20 @@
     &__logo {
         width: 10%;
     }
+    &__ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+    &__li {
+        margin-left: 1rem;
+        border: 2px rgba(0, 0, 0, 0) solid;
+        border-radius: 30px;
+        padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+    }
+    &__li:hover {
+        border: 2px $color-primary solid;
+    }
 }
 
-ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-}
-
-nav li {
-    margin-left: 1rem;
-    border: 2px rgba(0, 0, 0, 0) solid;
-    border-radius: 30px;
-    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
-
-}
-
-nav li:hover {
-    border: 2px $color-primary solid;
-}
-
+    /* Manque le lien surligné de la page en cours */
