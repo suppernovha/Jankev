@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "raleway", sans serif;
+    background: black;
+    color: $color-txt2;
+    font-size: 1.125rem;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+h1 {
+    font-family: 'notable';
+    font-size: 5.875rem;
+    color: $color-primary;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+a {
+    color: $color-txt2;
+    text-decoration: none;
+}
+
+td {
+    font-size: 1.5rem;
+}
+
