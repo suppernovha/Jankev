@@ -61,7 +61,7 @@ a {
 /* Manque le lien surligné de la page en cours */
 .footer {
   Background-color: black;
-  height: 6rem;
+  height: 8rem;
   margin-top: 6rem;
 }
 .footer__ul {
@@ -87,7 +87,7 @@ a {
   font-size: 1.3rem;
 }
 .table a {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #f7a006;
 }
 
