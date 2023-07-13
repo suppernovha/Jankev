@@ -10,7 +10,7 @@ body {
   background: black;
   color: #ffffff;
   font-size: 1.125rem;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 0rem 4rem 2rem 4rem;
 }
 
 h1 {
@@ -42,6 +42,8 @@ td {
   margin-right: 4rem;
   margin-left: 4rem;
   margin-bottom: 12rem;
+  padding-top: 1.5rem;
+  background: linear-gradient(black, rgba(0, 0, 0, 0));
 }
 .header__logo {
   width: 10%;
