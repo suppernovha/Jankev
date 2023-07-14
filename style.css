@@ -236,4 +236,17 @@ span {
   margin-bottom: 1rem;
 }
 
+.booking {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 8.9rem;
+}
+.booking__title {
+  margin-bottom: 1.5rem;
+}
+.booking h3 {
+  margin-bottom: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
