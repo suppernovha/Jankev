@@ -1,3 +1,10 @@
+#discotropic-pres {
+    & p {
+        width: 50%;
+        padding-bottom: 12rem;;
+    }
+}
+
 .title {
     padding-bottom: 8.9rem;
     &__row {
@@ -18,14 +25,8 @@
     }
 }
 
-.discotropic__title {
- 
-    text-align: right;
+.invite {
+    &__img {
+        width: 15%;
+    }
 }
-
-#disco-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-

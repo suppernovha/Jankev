@@ -248,6 +248,11 @@ span {
   margin-bottom: 2rem;
 }
 
+#discotropic-pres p {
+  width: 50%;
+  padding-bottom: 12rem;
+}
+
 .title {
   padding-bottom: 8.9rem;
 }
@@ -265,14 +270,8 @@ span {
   line-height: 2.2rem;
 }
 
-.discotropic__title {
-  text-align: right;
-}
-
-#disco-title {
-  position: absolute;
-  top: 0;
-  left: 0;
+.invite__img {
+  width: 15%;
 }
 
 /*# sourceMappingURL=style.css.map */
