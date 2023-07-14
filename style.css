@@ -186,6 +186,10 @@ span {
   z-index: -1;
 }
 
+#main_accueil {
+  padding-top: 2rem;
+}
+
 #dates {
   display: flex;
   flex-direction: column;
