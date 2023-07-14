@@ -167,19 +167,6 @@ span {
   font-weight: bold;
 }
 
-.booking {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 8.9rem;
-}
-.booking__title {
-  margin-bottom: 1.5rem;
-}
-.booking h3 {
-  margin-bottom: 2rem;
-}
-
 #body_accueil {
   background-color: black;
   color: #ffffff;
