@@ -26,6 +26,7 @@ main {
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
+  padding-bottom: 8.9rem;
 }
 
 footer a, header a {
@@ -211,7 +212,6 @@ span {
 }
 
 .txt_intro {
-  padding-top: 4.813rem;
   padding-bottom: 10rem;
   width: 60%;
 }
@@ -241,11 +241,37 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 8.9rem;
 }
 .booking__title {
   margin-bottom: 1.5rem;
 }
 .booking h3 {
   margin-bottom: 2rem;
+}
+
+.title {
+  padding-bottom: 8.9rem;
+}
+.title__row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.title__disco {
+  text-align: right;
+}
+.title__tropic {
+  display: flex;
+  text-align: right;
+  line-height: 2.2rem;
+}
+
+.discotropic__title {
+  text-align: right;
+}
+
+#disco-title {
+  position: absolute;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=main.css.map */

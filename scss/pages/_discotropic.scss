@@ -1,0 +1,31 @@
+.title {
+    padding-bottom: 8.9rem;
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    &__nuits {
+
+    }
+    &__disco {
+        text-align: right;
+    }
+    &__tropic {
+        display: flex;
+        text-align: right;
+        line-height: 2.2rem;
+    }
+}
+
+.discotropic__title {
+ 
+    text-align: right;
+}
+
+#disco-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
