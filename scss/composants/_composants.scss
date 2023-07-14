@@ -1,3 +1,5 @@
+/* Bouton présent sur plusieurs pages */
+
 .bouton {
     position: absolute;
     background-color: $color-primary;
@@ -14,18 +16,38 @@
     }
 }
 
-.form {
+/* Formulaire de la page Booking */
 
-    &__row {
-    display: flex;
-    }
-    &__txt {
-    width: 99%;
-    }
-    &__info {
+.form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
+    width: 60%;
+    &__row {
+    display: flex;
+    gap: 20px;
     }
+    &__column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    &__label {
+        padding-bottom: 0.7rem;
+        font-weight: bold;
+    }
+    &__submit {
+        width: 20%;
+        align-self: center;
+        margin-top: 1.5rem;
+        border-radius: 30px;
+        background-color: $color-primary;
+        font-weight: bold;
+    }
+}
+
+input, textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
 }

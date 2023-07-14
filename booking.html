@@ -46,21 +46,22 @@
                             Soundcloud<br/>
                             </p>
                     </div>
-                    <form action="" method="get">
+                    <form action="" method="get" class="form">
                         <div class="form__row">
-                            <div class="form__info">
-                                <label for="name">Nom</label>
+                            <div class="form__column">
+                                <label for="name" class="form__label">Nom</label>
                                 <input type="text" name="name" required>
                             </div>
-                            <div class="form__info">
-                                <label for="email">Email</label>
+                            <div class="form__column">
+                                <label for="email" class="form__label">Email</label>
                                 <input type="email" name="email" required>
                             </div>
                         </div>
-                        <div>
-                            <input type="text" class="form__txt">
+                        <div class="form__column">
+                            <label for="name" class="form__label">Message</label>
+                            <textarea rows="16" name="message" id="message"></textarea>
+                            <input type="submit" value="ENVOYER" class="form__submit">
                         </div>
-                        <input type="submit" value="ENVOYER">
                     </form>
                 </div>
             </main>

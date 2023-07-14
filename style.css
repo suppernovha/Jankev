@@ -9,6 +9,7 @@ body {
   font-family: "raleway", sans serif;
   color: #000000;
   font-size: 1rem;
+  background-color: #efe1c6;
 }
 
 h1 {
@@ -20,11 +21,6 @@ h1 {
 main {
   margin: 0rem 4rem 0rem 4rem;
   padding-top: 9rem;
-}
-
-#main_title {
-  color: #f7a006;
-  font-size: 5.875rem;
 }
 
 h2 {
@@ -45,6 +41,7 @@ ul {
   list-style-type: none;
 }
 
+/* Bouton présent sur plusieurs pages */
 .bouton {
   position: absolute;
   background-color: #f7a006;
@@ -61,17 +58,39 @@ ul {
   right: 10%;
 }
 
-.form__row {
-  display: flex;
-}
-.form__txt {
-  width: 99%;
-}
-.form__info {
+/* Formulaire de la page Booking */
+.form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-content: space-between;
+  width: 60%;
+}
+.form__row {
+  display: flex;
+  gap: 20px;
+}
+.form__column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form__label {
+  padding-bottom: 0.7rem;
+  font-weight: bold;
+}
+.form__submit {
+  width: 20%;
+  align-self: center;
+  margin-top: 1.5rem;
+  border-radius: 30px;
+  background-color: #f7a006;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
 }
 
 .header {
@@ -196,13 +215,11 @@ span {
   padding: 0rem 6rem 0rem 6rem;
 }
 
-.main_title {
+#main_title {
   position: absolute;
   top: 40%;
-}
-
-body {
-  background-color: #efe1c6;
+  color: #f7a006;
+  font-size: 5.875rem;
 }
 
 .txt_intro {
