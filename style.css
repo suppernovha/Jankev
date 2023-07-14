@@ -53,8 +53,8 @@ p {
   text-align: center;
   font-weight: bold;
   border-radius: 30px;
-  padding: 1rem 3rem 1rem 3rem;
-  font-size: 1.5rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  font-size: 1.3rem;
 }
 .bouton--accueil {
   right: 42%;
@@ -68,6 +68,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 60%;
+  padding-top: 4rem;
 }
 .form__row {
   display: flex;
@@ -245,6 +246,9 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.booking__txt {
+  padding-top: 4rem;
 }
 .booking__title {
   margin-bottom: 1.5rem;
