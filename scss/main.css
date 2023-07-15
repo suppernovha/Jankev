@@ -332,6 +332,7 @@ span {
 .mix__cover {
   width: 100%;
   margin-bottom: 0.5rem;
+  position: relative;
 }
 .mix__prev {
   min-width: 15rem;
@@ -344,6 +345,21 @@ span {
 }
 .mix__title {
   margin-bottom: 1rem;
+}
+
+/* ESSAIS */
+iframe {
+  width: 240px;
+  height: 94.38px;
+  position: absolute;
+}
+
+.lien__mix {
+  position: relative;
+}
+
+.mix__cover:active {
+  visibility: hidden;
 }
 
 .title__podcasts {

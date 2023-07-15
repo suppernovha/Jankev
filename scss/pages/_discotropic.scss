@@ -76,6 +76,7 @@
     &__cover {
         width: 100%;
         margin-bottom: 0.5rem;
+        position: relative;
     }
     &__prev {
         min-width: 15rem;
@@ -91,3 +92,24 @@
     }
 }
 
+/* ESSAIS */
+
+
+iframe {
+    width: 240px;
+    height: 94.38px;
+    position: absolute;
+
+}
+
+.lien__mix {
+    position: relative;
+}
+
+.mix__cover {
+
+}
+.mix__cover:active {
+    visibility: hidden;
+
+}
