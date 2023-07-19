@@ -1,4 +1,4 @@
-.txt_intro {
+.main-intro {
     padding-bottom: 10rem;
     width: 60%;
 }
@@ -9,15 +9,13 @@
     width: 100%;
     justify-content: space-between;
     margin-bottom: 10rem;
-}
-
-.txt_bio {
-    width: 40%;
-}
-
-.diaporama {
-    background-color: black;
-    width: 40%;
+    &__txt {
+        width: 40%;
+    }
+    &__diaporama {
+        background-color: black;
+        width: 40%;
+    }
 }
 
 .festivals h3 {

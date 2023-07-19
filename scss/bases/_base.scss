@@ -10,10 +10,8 @@ body {
     background-color: $color-background;
 }
 
-h1 {
-    font-family: 'notable';
-    color: $color-txt;
-    font-size: 5rem;
+header a, footer a {
+    color: $color-txt2;
 }
 
 main {
@@ -21,14 +19,21 @@ main {
     padding-top: 9rem;
 }
 
+h1 {
+    font-family: 'notable';
+    color: $color-txt;
+    font-size: 5rem;
+}
+
+
 h2 {
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 8.9rem;
 }
 
-footer a, header a {
-    color: $color-txt2;
+p {
+    text-align: justify;
 }
 
 a { 
@@ -40,6 +45,7 @@ ul {
     list-style-type: none;
 }
 
-p {
-    text-align: justify;
+span {
+    font-weight: bold;
 }
+

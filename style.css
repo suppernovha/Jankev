@@ -12,15 +12,19 @@ body {
   background-color: #efe1c6;
 }
 
-h1 {
-  font-family: "notable";
-  color: #000000;
-  font-size: 5rem;
+header a, footer a {
+  color: #ffffff;
 }
 
 main {
   margin: 0rem 4rem 0rem 4rem;
   padding-top: 9rem;
+}
+
+h1 {
+  font-family: "notable";
+  color: #000000;
+  font-size: 5rem;
 }
 
 h2 {
@@ -29,8 +33,8 @@ h2 {
   padding-bottom: 8.9rem;
 }
 
-footer a, header a {
-  color: #ffffff;
+p {
+  text-align: justify;
 }
 
 a {
@@ -42,8 +46,8 @@ ul {
   list-style-type: none;
 }
 
-p {
-  text-align: justify;
+span {
+  font-weight: bold;
 }
 
 /* Bouton présent sur plusieurs pages */
@@ -55,14 +59,11 @@ p {
   border-radius: 30px;
   padding: 1rem 2.5rem 1rem 2.5rem;
   font-size: 1.3rem;
+  right: 10%;
 }
 .bouton--accueil {
   right: 42%;
 }
-.bouton--basic {
-  right: 10%;
-}
-
 /* Formulaire de la page Booking */
 .form {
   display: flex;
@@ -92,8 +93,7 @@ p {
   background-color: #f7a006;
   font-weight: bold;
 }
-
-input, textarea {
+.form input, .form textarea {
   padding: 15px;
   border-radius: 3px;
   border: none;
@@ -170,24 +170,11 @@ input, textarea {
   color: #f7a006;
 }
 
-span {
-  font-weight: bold;
-}
-
-#body_accueil {
+.body-accueil {
   background-color: black;
   color: #ffffff;
 }
-
-.section_header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35rem;
-  padding-bottom: 12rem;
-}
-
-#video {
+.body-accueil__video {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -199,24 +186,29 @@ span {
   z-index: -1;
 }
 
-#main_accueil {
+.main-page {
   padding-top: 2rem;
 }
-
-#dates {
+.main-page__header {
   display: flex;
-  flex-direction: column;
-  padding: 0rem 6rem 0rem 6rem;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  padding-bottom: 12rem;
 }
-
-#main_title {
+.main-page__title {
   position: absolute;
   top: 40%;
   color: #f7a006;
   font-size: 5.875rem;
 }
+.main-page__dates {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 6rem 0rem 6rem;
+}
 
-.txt_intro {
+.main-intro {
   padding-bottom: 10rem;
   width: 60%;
 }
@@ -228,12 +220,10 @@ span {
   justify-content: space-between;
   margin-bottom: 10rem;
 }
-
-.txt_bio {
+.bio__txt {
   width: 40%;
 }
-
-.diaporama {
+.bio__diaporama {
   background-color: black;
   width: 40%;
 }
@@ -262,18 +252,18 @@ span {
   padding-bottom: 12rem;
 }
 
-.title {
+.discotropic-title {
   padding-bottom: 8.9rem;
 }
-.title__row {
+.discotropic-title__row {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
-.title__disco {
+.discotropic-title__disco {
   text-align: right;
 }
-.title__tropic {
+.discotropic-title__tropic {
   display: flex;
   text-align: right;
   line-height: 2.2rem;

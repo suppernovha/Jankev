@@ -8,11 +8,12 @@
     border-radius: 30px;
     padding: 1rem 2.5rem 1rem 2.5rem;
     font-size: 1.3rem;
+    right: 10%;
     &--accueil {
         right: 42%;
     }
     &--basic {
-        right: 10%;
+        
     }
 }
 
@@ -45,10 +46,11 @@
         background-color: $color-primary;
         font-weight: bold;
     }
+    input, textarea {
+        padding: 15px;
+        border-radius: 3px;
+        border: none;
+    }
+
 }
 
-input, textarea {
-    padding: 15px;
-    border-radius: 3px;
-    border: none;
-}
