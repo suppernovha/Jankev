@@ -89,11 +89,13 @@ span {
   width: 20%;
   align-self: center;
   margin-top: 1.5rem;
+  padding: 1rem 6.5rem 1rem 2.5rem;
   border-radius: 30px;
+  border: none;
   background-color: #f7a006;
   font-weight: bold;
 }
-.form input, .form textarea {
+.form .txt-zone {
   padding: 15px;
   border-radius: 3px;
   border: none;
@@ -336,7 +338,7 @@ span {
   margin-bottom: 1rem;
 }
 
-/* ESSAIS */
+/* ESSAIS  SOUNDCLOUD : discotropic.html - lignes 152/153 - iframe */
 iframe {
   width: 240px;
   height: 94.38px;
