@@ -5,10 +5,11 @@
     background-color: $color-primary;
     text-align: center;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: $button-radius;
     padding: 1rem 2.5rem 1rem 2.5rem;
     font-size: 1.3rem;
     right: 10%;
+    @include button-shadow;
     &--accueil {
         right: 42%;
     }
@@ -43,10 +44,11 @@
         align-self: center;
         margin-top: 1.5rem;
         padding: 1rem 6.5rem 1rem 2.5rem;
-        border-radius: 30px;
+        border-radius: $button-radius;
         border: none;
         background-color: $color-primary;
         font-weight: bold;
+        @include button-shadow;
     }
     
     .txt-zone {
