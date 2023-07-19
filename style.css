@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* MIXINS */
 /* Maps */
 * {
   margin: 0;
@@ -60,10 +61,15 @@ span {
   padding: 1rem 2.5rem 1rem 2.5rem;
   font-size: 1.3rem;
   right: 10%;
+  box-shadow: 0.3rem 0.2rem 0.5rem black;
 }
 .bouton--accueil {
   right: 42%;
 }
+.bouton:hover {
+  transform: scale 1.1;
+}
+
 /* Formulaire de la page Booking */
 .form {
   display: flex;
@@ -94,6 +100,7 @@ span {
   border: none;
   background-color: #f7a006;
   font-weight: bold;
+  box-shadow: 0.3rem 0.2rem 0.5rem black;
 }
 .form .txt-zone {
   padding: 15px;

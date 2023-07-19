@@ -3,6 +3,11 @@ $color-background: #efe1c6;
 $color-txt: #000000;
 $color-txt2: #ffffff;
 
+/* MIXINS */
+
+@mixin button-shadow {
+    box-shadow: .3rem .2rem .5rem black;
+}
 /* Maps */
 
 $font-size: (header: 70rem, h1: 7rem, h2: 5rem, h3: 4rem, body: 2rem, body-highlight: 5rem);

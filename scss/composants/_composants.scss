@@ -9,11 +9,15 @@
     padding: 1rem 2.5rem 1rem 2.5rem;
     font-size: 1.3rem;
     right: 10%;
+    @include button-shadow;
     &--accueil {
         right: 42%;
     }
     &--basic {
         
+    }
+    &:hover {
+        transform: scale (1.1);
     }
 }
 
@@ -47,6 +51,7 @@
         border: none;
         background-color: $color-primary;
         font-weight: bold;
+        @include button-shadow;
     }
     
     .txt-zone {
