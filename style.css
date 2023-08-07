@@ -62,12 +62,14 @@ span {
   font-size: 1.3rem;
   right: 10%;
   box-shadow: 0.3rem 0.2rem 0.5rem black;
+  transition-property: transform;
+  transition-duration: 200ms;
 }
 .bouton--accueil {
   right: 42%;
 }
 .bouton:hover {
-  transform: scale 1.1;
+  transform: scale(1.1);
 }
 
 /* Formulaire de la page Booking */
@@ -105,7 +107,16 @@ span {
 .form .txt-zone {
   padding: 15px;
   border-radius: 3px;
-  border: none;
+  outline: none;
+  border: white;
+  transition: background-color 500ms;
+}
+.form .txt-zone:focus {
+  border: 2px solid #f7a006;
+}
+.form .txt-zone:not(:focus):invalid {
+  background: #dddddd;
+  color: #ffffff;
 }
 
 .header {
