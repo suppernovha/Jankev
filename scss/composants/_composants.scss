@@ -10,11 +10,17 @@
     font-size: 1.3rem;
     right: 10%;
     @include button-shadow;
+    transition-property: transform;
+    transition-duration: 200ms;
+    @include button-shadow;
     &--accueil {
         right: 42%;
     }
     &--basic {
         
+    }
+    &:hover {
+        transform: scale(1.1);
     }
 }
 
@@ -49,12 +55,22 @@
         background-color: $color-primary;
         font-weight: bold;
         @include button-shadow;
+        @include button-shadow;
     }
-    
     .txt-zone {
         padding: 15px;
         border-radius: 3px;
-        border: none;
+        outline: none;
+        border: white;
+        transition: background-color 500ms;
+        &:focus {
+            border: 2px solid $color-primary;
+        }
+        &:not(:focus):invalid {
+            background: rgb(221, 221, 221);
+            color: $color-txt2;
+        }
+    
     }
 
 }
