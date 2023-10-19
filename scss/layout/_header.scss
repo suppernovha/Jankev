@@ -29,6 +29,13 @@
         border: 2px rgba(0, 0, 0, 0) solid;
         border-radius: 30px;
         padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+        &--pop {
+            background: linear-gradient(to right, palegreen, yellow, green);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            color: transparent;
+        }
     }
     &__li:hover {
         border: 2px $color-primary solid;

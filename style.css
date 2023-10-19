@@ -64,6 +64,7 @@ span {
   box-shadow: 0.2rem 0.2rem 0.5rem black;
   transition-property: transform;
   transition-duration: 200ms;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
 .bouton--accueil {
   right: 42%;
@@ -102,6 +103,7 @@ span {
   border: none;
   background-color: #f7a006;
   font-weight: bold;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
   box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
 .form .txt-zone {
@@ -152,6 +154,13 @@ span {
   border: 2px rgba(0, 0, 0, 0) solid;
   border-radius: 30px;
   padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+}
+.header__li--pop {
+  background: linear-gradient(to right, palegreen, yellow, green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
 }
 .header__li:hover {
   border: 2px #f7a006 solid;
@@ -218,7 +227,7 @@ span {
 }
 .main-page__title {
   position: absolute;
-  top: 40%;
+  top: 16%;
   color: #f7a006;
   font-size: 5.875rem;
 }
