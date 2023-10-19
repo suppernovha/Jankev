@@ -64,6 +64,7 @@ span {
   box-shadow: 0.2rem 0.2rem 0.5rem black;
   transition-property: transform;
   transition-duration: 200ms;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
 .bouton--accueil {
   right: 42%;
@@ -102,6 +103,7 @@ span {
   border: none;
   background-color: #f7a006;
   font-weight: bold;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
   box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
 .form .txt-zone {
