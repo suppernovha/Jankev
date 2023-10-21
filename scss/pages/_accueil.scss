@@ -21,11 +21,11 @@
         justify-content: center;
         align-items: center;
         height: 35rem;
-        padding-bottom: 12rem;
+        padding-bottom: 12.6rem;
     }
     &__title {
         position: absolute;
-        top: 40%;
+        top: 41%;
         color: $color-primary;
         font-size: 5.875rem;
     }
@@ -33,6 +33,7 @@
         display: flex;
         flex-direction: column;
         padding: 0rem 6rem 0rem 6rem;
+
     
     }
 }

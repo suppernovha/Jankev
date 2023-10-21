@@ -1,7 +1,9 @@
 .header {
     position: fixed;
-    left: 0px;
+    left: 0;
+    right: 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     padding-right: 4rem;
@@ -13,12 +15,14 @@
     }
     &--lightgradient {
         background: linear-gradient(rgb(0, 0, 0), rgba(255, 0, 0, 0));
+        color: $color-txt2;
         & a {
-            color: black;
+    
         }
     }
     &__logo {
         width: 10%;
+        max-width: 140px;
     }
     &__ul {
         display: flex;
@@ -26,13 +30,32 @@
     }
     &__li {
         margin-left: 1rem;
-        border: 2px rgba(0, 0, 0, 0) solid;
         border-radius: 30px;
         padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+        backdrop-filter: blur(4px);
+        border: 2px $color-txt2 solid;
+        font-weight: 500;
+        &:hover {
+            border: 2px white solid;
+            background-color: white;
+            color: $color-txt;
+        }
+        &--pop {
+        
+            background: linear-gradient(to right, palegreen, yellow, green);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            color: transparent;
+            &:hover {
+                color: black;
+                background: linear-gradient(to right, palegreen, yellow, green);
+                border: 2px $color-txt2 solid;
+
+            }
+        }
     }
-    &__li:hover {
-        border: 2px $color-primary solid;
-    }
+
 }
 
     /* Manque le lien surligné de la page en cours */

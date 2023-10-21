@@ -5,14 +5,14 @@
         <meta charset="utf-8" />
         <title>Jankev - DJ</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="/medias/icons/disco-ball.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Notable&family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
     </head>
 
     <body class="body-accueil">
-        <div><video autoplay loop muted controls class="body-accueil__video"><source src="medias/videos/accueil.mp4" type="video/mp4"></video></div>
-
+       <div><video paused muted class="body-accueil__video"><source src="medias/videos/accueil.mp4" type="video/mp4"></video></div> <!-- ajouter autoplay controls et loop à la place de paused -->
         <header class="header header--darkgradient">
             <div>
                 <a href="https://soundcloud.com/lesoreillesdejankev?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" title="Soundcloud"><img src="medias/icons/logo_soundcloud_blanc.png" alt="Logo Soundcloud" class="header__logo"/></a>
@@ -23,7 +23,7 @@
                 <ul  class="header__ul">
                     <a href="accueil.html"><li class="header__li">ACCUEIL</li></a>
                     <a href="bio.html"><li class="header__li">BIO</li class="header__li"></a>
-                    <a href="discotropic.html"><li class="header__li">DISCOTROPIC</li></a>
+                    <a href="discotropic.html"><li class="header__li header__li--pop">DISCOTROPIC</li></a>
                     <a href="podcasts.html"><li class="header__li">PODCASTS</li></a>
                     <a href="booking.html"><li class="header__li">BOOKING</li></a>
                 </ul>
