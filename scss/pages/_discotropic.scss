@@ -23,16 +23,17 @@
     }
     &__nuits {
 
+
     }
     &__disco {
         text-align: right;
-        color: $color-txt2;
+        color: $color-primary;
     }
     &__tropic {
         display: flex;
         text-align: right;
         line-height: $title-line-height;
-        color: $color-txt2;
+        color: $color-primary;
     }
 }
 

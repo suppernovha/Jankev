@@ -41,16 +41,15 @@
             color: $color-txt;
         }
         &--pop {
-        
-            background: linear-gradient(to right, palegreen, yellow, green);
+            background: linear-gradient(25deg,  rgb(240, 237, 0),rgb(255, 45, 24),  rgb(240, 237, 0),rgb(169, 94, 239), rgb(238, 195, 57), rgb(251, 85, 171));
             background-clip: text;
             -webkit-background-clip: text;
             -moz-background-clip: text;
             color: transparent;
             &:hover {
-                color: black;
-                background: linear-gradient(to right, palegreen, yellow, green);
-                border: 2px $color-txt2 solid;
+                color: $color-txt;
+                background: linear-gradient(25deg,  rgb(240, 237, 0),rgb(255, 45, 24),  rgb(240, 237, 0),rgb(169, 94, 239), rgb(238, 195, 57), rgb(251, 85, 171));
+                border: 2px $color-txt solid;
 
             }
         }
