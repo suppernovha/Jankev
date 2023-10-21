@@ -13,6 +13,16 @@ $title-line-height: 2rem;
     box-shadow: .2rem .2rem .5rem black;
 }
 
+@mixin discotropic-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+
+}
+
+@mixin main-padding {
+    padding: 0rem 2rem 0rem 2rem;
+}
+
 /* Maps */
 
 $font-size: (header: 70rem, h1: 7rem, h2: 5rem, h3: 4rem, body: 2rem, body-highlight: 5rem);

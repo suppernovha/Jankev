@@ -10,13 +10,24 @@ body {
     background-color: $color-background;
 }
 
+.body--light {
+    color: $color-txt2;
+}
+
 header a, footer a {
     color: $color-txt2;
 }
 
 main {
-    margin: 0rem 4rem 0rem 4rem;
+    margin: 0rem 2rem 0rem 2rem;
     padding-top: 9rem;
+}
+
+.main-padding {
+    @include main-padding;
+}
+.colored-title {
+    color: $color-primary;
 }
 
 h1 {

@@ -13,13 +13,25 @@ body {
   background-color: #efe1c6;
 }
 
+.body--light {
+  color: #ffffff;
+}
+
 header a, footer a {
   color: #ffffff;
 }
 
 main {
-  margin: 0rem 4rem 0rem 4rem;
+  margin: 0rem 2rem 0rem 2rem;
   padding-top: 9rem;
+}
+
+.main-padding {
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.colored-title {
+  color: #f7a006;
 }
 
 h1 {
@@ -125,6 +137,7 @@ span {
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,7 +261,7 @@ span {
 .main-page__dates {
   display: flex;
   flex-direction: column;
-  padding: 0rem 6rem 0rem 6rem;
+  padding: 0rem 8rem 0rem 8rem;
 }
 
 .jankev-bio {
@@ -267,7 +280,6 @@ span {
 .bio {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
   margin-bottom: 10rem;
 }
@@ -301,21 +313,27 @@ span {
 .disco-bg {
   position: fixed;
   width: 100%;
-  opacity: 0.7;
+  opacity: 1p;
   z-index: -2;
 }
 
 #discotropic-pres {
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   margin: 0px;
+  height: 80vh;
+  padding: 0rem 2rem 0rem 2rem;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 #discotropic-pres p {
   width: 50%;
-  padding-bottom: 12rem;
 }
 
 .discotropic-title {
-  padding-bottom: 8.9rem;
+  padding-bottom: 13rem;
+  color: #f7a006;
 }
 .discotropic-title__row {
   display: flex;
@@ -324,31 +342,33 @@ span {
 }
 .discotropic-title__disco {
   text-align: right;
-  color: #f7a006;
 }
 .discotropic-title__tropic {
   display: flex;
   text-align: right;
   line-height: 2rem;
-  color: #f7a006;
 }
 
 .invite {
-  padding: 0rem 8rem 10rem 8rem;
-}
-.invite__img {
-  z-index: 2;
-  width: 10.5rem;
-  height: 10.5rem;
+  padding: 0rem 16rem 10rem 16rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 70vh;
 }
 .invite__bloc {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
   gap: 1.8rem;
+}
+.invite__img {
+  z-index: -2;
+  width: 10.5rem;
+  height: 10.5rem;
 }
 .invite__name {
   position: absolute;
@@ -367,12 +387,21 @@ span {
   display: block;
 }
 
+.sectionmix {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 0rem 2rem 0rem 2rem;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
 .mix {
   display: flex;
   justify-content: space-between;
   margin-top: 5rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #ffffff;
   font-size: 1.3rem;
 }
 .mix li:hover {
@@ -417,7 +446,6 @@ iframe {
 }
 
 .img {
-  z-index: 1;
   position: relative;
 }
 .img:hover::after {
@@ -425,7 +453,6 @@ iframe {
 }
 .img::after {
   content: "ARTISTE";
-  z-index: 2;
   position: absolute;
   top: 0;
   bottom: 0;

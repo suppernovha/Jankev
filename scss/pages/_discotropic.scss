@@ -1,57 +1,63 @@
 .disco-bg {
     position: fixed;
     width: 100%;
-    opacity: .7;
+    opacity: 1p;
     z-index: -2;
 }
 
+//.tv {
+//    position: absolute;
+//    right: 80px;
+//    bottom: 24%;
+//    width: 38%;}
+
 #discotropic-pres {
-    background-color: rgba(0, 0, 0, 0.5);
+    @include discotropic-bg;
     margin: 0px;
+    height: 80vh;
+    @include main-padding;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
     & p {
         width: 50%;
-        padding-bottom: 12rem;
     }
 }
 
 .discotropic-title {
-    padding-bottom: 8.9rem;
+    padding-bottom: 13rem;
+    color: $color-primary;
     &__row {
         display: flex;
         align-items: center;
         gap: 1.2rem;
     }
-    &__nuits {
-
-
-    }
     &__disco {
         text-align: right;
-        color: $color-primary;
     }
     &__tropic {
         display: flex;
         text-align: right;
         line-height: $title-line-height;
-        color: $color-primary;
     }
 }
 
 .invite {
-    padding: 0rem 8rem 10rem 8rem;
-    &__img {
-        z-index: 2;
-        width: 10.5rem;
-        height: 10.5rem;
-    }
+    padding: 0rem 16rem 10rem 16rem;
+    @include discotropic-bg;
+    height: 70vh;
     &__bloc {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         padding-bottom: 2rem;
         gap: 1.8rem;
+    }
+    &__img {
+        z-index: -2;
+        width: 10.5rem;
+        height: 10.5rem;
     }
     &__name {
         position: absolute;
@@ -70,13 +76,19 @@
         }
     }
 }
+.sectionmix {
+    @include discotropic-bg;
+    @include main-padding;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 
+}
 .mix {
     display: flex;
     justify-content: space-between;
     margin-top: 5rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid $color-txt;
+    border-bottom: 2px solid $color-txt2;
     font-size: 1.3rem;
     & li:hover {
         font-weight: bold;
@@ -128,7 +140,6 @@ iframe {
 }
 
 .img {
-    z-index: 1;
     position: relative;
 &:hover {
     &::after {
@@ -137,12 +148,13 @@ iframe {
 }
 &::after {
     content:"ARTISTE";
-    z-index: 2;
+    
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+
     opacity: 0;
     display: flex;
     align-items: center;
