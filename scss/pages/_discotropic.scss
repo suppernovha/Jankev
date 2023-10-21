@@ -1,7 +1,16 @@
+.disco-bg {
+    position: fixed;
+    width: 100%;
+    opacity: .7;
+    z-index: -2;
+}
+
 #discotropic-pres {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
     & p {
         width: 50%;
-        padding-bottom: 12rem;;
+        padding-bottom: 12rem;
     }
 }
 
@@ -17,11 +26,13 @@
     }
     &__disco {
         text-align: right;
+        color: $color-txt2;
     }
     &__tropic {
         display: flex;
         text-align: right;
         line-height: $title-line-height;
+        color: $color-txt2;
     }
 }
 

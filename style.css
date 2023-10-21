@@ -123,8 +123,10 @@ span {
 
 .header {
   position: fixed;
-  left: 0px;
+  left: 0;
+  right: 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   padding-right: 4rem;
@@ -144,6 +146,7 @@ span {
 }
 .header__logo {
   width: 10%;
+  max-width: 140px;
 }
 .header__ul {
   display: flex;
@@ -151,9 +154,16 @@ span {
 }
 .header__li {
   margin-left: 1rem;
-  border: 2px rgba(0, 0, 0, 0) solid;
   border-radius: 30px;
   padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+  backdrop-filter: blur(4px);
+  border: 2px #ffffff solid;
+  font-weight: 500;
+}
+.header__li:hover {
+  border: 2px white solid;
+  background-color: white;
+  color: #000000;
 }
 .header__li--pop {
   background: linear-gradient(to right, palegreen, yellow, green);
@@ -162,8 +172,10 @@ span {
   -moz-background-clip: text;
   color: transparent;
 }
-.header__li:hover {
-  border: 2px #f7a006 solid;
+.header__li--pop:hover {
+  color: black;
+  background: linear-gradient(to right, palegreen, yellow, green);
+  border: 2px #ffffff solid;
 }
 
 /* Manque le lien surligné de la page en cours */
@@ -187,9 +199,10 @@ span {
   background-color: rgba(0, 0, 0, 0.7);
   border-collapse: collapse;
   text-align: center;
+  backdrop-filter: blur(4px);
 }
 .table__td {
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 2rem 0rem 2rem 0rem;
   border-top: 1px white solid;
   border-bottom: 1px white solid;
   font-size: 1rem;
@@ -223,11 +236,11 @@ span {
   justify-content: center;
   align-items: center;
   height: 35rem;
-  padding-bottom: 12rem;
+  padding-bottom: 12.6rem;
 }
 .main-page__title {
   position: absolute;
-  top: 16%;
+  top: 41%;
   color: #f7a006;
   font-size: 5.875rem;
 }
@@ -235,6 +248,14 @@ span {
   display: flex;
   flex-direction: column;
   padding: 0rem 6rem 0rem 6rem;
+}
+
+.jankev-bio {
+  position: absolute;
+  top: -80px;
+  left: 200px;
+  z-index: -2;
+  opacity: 0.3;
 }
 
 .main-intro {
@@ -276,6 +297,17 @@ span {
   margin-bottom: 2rem;
 }
 
+.disco-bg {
+  position: fixed;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -2;
+}
+
+#discotropic-pres {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+}
 #discotropic-pres p {
   width: 50%;
   padding-bottom: 12rem;
@@ -291,11 +323,13 @@ span {
 }
 .discotropic-title__disco {
   text-align: right;
+  color: #ffffff;
 }
 .discotropic-title__tropic {
   display: flex;
   text-align: right;
   line-height: 2rem;
+  color: #ffffff;
 }
 
 .invite {

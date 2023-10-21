@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* MIXINS */
 /* Maps */
 * {
   margin: 0;
@@ -12,15 +13,19 @@ body {
   background-color: #efe1c6;
 }
 
-h1 {
-  font-family: "notable";
-  color: #000000;
-  font-size: 5rem;
+header a, footer a {
+  color: #ffffff;
 }
 
 main {
   margin: 0rem 4rem 0rem 4rem;
   padding-top: 9rem;
+}
+
+h1 {
+  font-family: "notable";
+  color: #000000;
+  font-size: 5rem;
 }
 
 h2 {
@@ -29,8 +34,8 @@ h2 {
   padding-bottom: 8.9rem;
 }
 
-footer a, header a {
-  color: #ffffff;
+p {
+  text-align: justify;
 }
 
 a {
@@ -42,8 +47,8 @@ ul {
   list-style-type: none;
 }
 
-p {
-  text-align: justify;
+span {
+  font-weight: bold;
 }
 
 /* Bouton présent sur plusieurs pages */
@@ -55,12 +60,17 @@ p {
   border-radius: 30px;
   padding: 1rem 2.5rem 1rem 2.5rem;
   font-size: 1.3rem;
+  right: 10%;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
+  transition-property: transform;
+  transition-duration: 200ms;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
 .bouton--accueil {
   right: 42%;
 }
-.bouton--basic {
-  right: 10%;
+.bouton:hover {
+  transform: scale(1.1);
 }
 
 /* Formulaire de la page Booking */
@@ -88,21 +98,35 @@ p {
   width: 20%;
   align-self: center;
   margin-top: 1.5rem;
+  padding: 1rem 6.5rem 1rem 2.5rem;
   border-radius: 30px;
+  border: none;
   background-color: #f7a006;
   font-weight: bold;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
-
-input, textarea {
+.form .txt-zone {
   padding: 15px;
   border-radius: 3px;
-  border: none;
+  outline: none;
+  border: white;
+  transition: background-color 500ms;
+}
+.form .txt-zone:focus {
+  border: 2px solid #f7a006;
+}
+.form .txt-zone:not(:focus):invalid {
+  background: rgb(221, 221, 221);
+  color: #ffffff;
 }
 
 .header {
   position: fixed;
-  left: 0px;
+  left: 0;
+  right: 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   padding-right: 4rem;
@@ -122,6 +146,7 @@ input, textarea {
 }
 .header__logo {
   width: 10%;
+  max-width: 140px;
 }
 .header__ul {
   display: flex;
@@ -129,12 +154,29 @@ input, textarea {
 }
 .header__li {
   margin-left: 1rem;
-  border: 2px rgba(0, 0, 0, 0) solid;
   border-radius: 30px;
   padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border: 2px #ffffff solid;
+  font-weight: 500;
 }
 .header__li:hover {
-  border: 2px #f7a006 solid;
+  border: 2px white solid;
+  background-color: white;
+  color: #000000;
+}
+.header__li--pop {
+  background: linear-gradient(to right, palegreen, yellow, green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
+.header__li--pop:hover {
+  color: black;
+  background: linear-gradient(to right, palegreen, yellow, green);
+  border: 2px #ffffff solid;
 }
 
 /* Manque le lien surligné de la page en cours */
@@ -158,9 +200,11 @@ input, textarea {
   background-color: rgba(0, 0, 0, 0.7);
   border-collapse: collapse;
   text-align: center;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 .table__td {
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 2rem 0rem 2rem 0rem;
   border-top: 1px white solid;
   border-bottom: 1px white solid;
   font-size: 1rem;
@@ -170,24 +214,11 @@ input, textarea {
   color: #f7a006;
 }
 
-span {
-  font-weight: bold;
-}
-
-#body_accueil {
+.body-accueil {
   background-color: black;
   color: #ffffff;
 }
-
-.section_header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35rem;
-  padding-bottom: 12rem;
-}
-
-#video {
+.body-accueil__video {
   height: 100vh;
   width: 100vw;
   -o-object-fit: cover;
@@ -200,24 +231,37 @@ span {
   z-index: -1;
 }
 
-#main_accueil {
+.main-page {
   padding-top: 2rem;
 }
-
-#dates {
+.main-page__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  padding-bottom: 12.6rem;
+}
+.main-page__title {
+  position: absolute;
+  top: 41%;
+  color: #f7a006;
+  font-size: 5.875rem;
+}
+.main-page__dates {
   display: flex;
   flex-direction: column;
   padding: 0rem 6rem 0rem 6rem;
 }
 
-#main_title {
+.jankev-bio {
   position: absolute;
-  top: 40%;
-  color: #f7a006;
-  font-size: 5.875rem;
+  top: -80px;
+  left: 200px;
+  z-index: -2;
+  opacity: 0.3;
 }
 
-.txt_intro {
+.main-intro {
   padding-bottom: 10rem;
   width: 60%;
 }
@@ -229,12 +273,10 @@ span {
   justify-content: space-between;
   margin-bottom: 10rem;
 }
-
-.txt_bio {
+.bio__txt {
   width: 40%;
 }
-
-.diaporama {
+.bio__diaporama {
   background-color: black;
   width: 40%;
 }
@@ -258,32 +300,46 @@ span {
   margin-bottom: 2rem;
 }
 
+.disco-bg {
+  position: fixed;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -2;
+}
+
+#discotropic-pres {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+}
 #discotropic-pres p {
   width: 50%;
   padding-bottom: 12rem;
 }
 
-.title {
+.discotropic-title {
   padding-bottom: 8.9rem;
 }
-.title__row {
+.discotropic-title__row {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
-.title__disco {
+.discotropic-title__disco {
   text-align: right;
+  color: #ffffff;
 }
-.title__tropic {
+.discotropic-title__tropic {
   display: flex;
   text-align: right;
-  line-height: 2.2rem;
+  line-height: 2rem;
+  color: #ffffff;
 }
 
 .invite {
   padding: 0rem 8rem 10rem 8rem;
 }
 .invite__img {
+  z-index: 2;
   width: 10.5rem;
   height: 10.5rem;
 }
@@ -347,7 +403,7 @@ span {
   margin-bottom: 1rem;
 }
 
-/* ESSAIS */
+/* ESSAIS  SOUNDCLOUD : discotropic.html - lignes 152/153 - iframe */
 iframe {
   width: 240px;
   height: 94.38px;
@@ -360,6 +416,33 @@ iframe {
 
 .mix__cover:active {
   visibility: hidden;
+}
+
+.img {
+  z-index: 1;
+  position: relative;
+}
+.img:hover::after {
+  opacity: 1;
+}
+.img::after {
+  content: "ARTISTE";
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.5rem;
+  height: 10.5rem;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 250ms;
 }
 
 .title__podcasts {
