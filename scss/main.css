@@ -140,9 +140,7 @@ span {
 }
 .header--lightgradient {
   background: linear-gradient(rgb(0, 0, 0), rgba(255, 0, 0, 0));
-}
-.header--lightgradient a {
-  color: black;
+  color: #ffffff;
 }
 .header__logo {
   width: 10%;
