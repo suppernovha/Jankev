@@ -177,6 +177,10 @@ span {
   background-color: white;
   color: #000000;
 }
+.header__li--active {
+  background-color: #ffffff;
+  color: #000000;
+}
 .header__li--pop {
   background: linear-gradient(25deg, rgb(240, 237, 0), rgb(255, 45, 24), rgb(240, 237, 0), rgb(169, 94, 239), rgb(238, 195, 57), rgb(251, 85, 171));
   background-clip: text;

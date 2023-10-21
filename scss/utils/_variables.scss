@@ -23,6 +23,11 @@ $title-line-height: 2rem;
     padding: 0rem 2rem 0rem 2rem;
 }
 
+@mixin current-page {
+    background-color: $color-txt2;
+    color: $color-txt;
+}
+
 /* Maps */
 
 $font-size: (header: 70rem, h1: 7rem, h2: 5rem, h3: 4rem, body: 2rem, body-highlight: 5rem);

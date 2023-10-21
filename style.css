@@ -176,6 +176,10 @@ span {
   background-color: white;
   color: #000000;
 }
+.header__li--active {
+  background-color: #ffffff;
+  color: #000000;
+}
 .header__li--pop {
   background: linear-gradient(25deg, #f0ed00, #ff2d18, #f0ed00, #a95eef, #eec339, #fb55ab);
   background-clip: text;

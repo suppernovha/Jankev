@@ -41,6 +41,9 @@
             background-color: white;
             color: $color-txt;
         }
+        &--active {
+            @include current-page;
+        }
         &--pop {
             background: linear-gradient(25deg,  rgb(240, 237, 0),rgb(255, 45, 24),  rgb(240, 237, 0),rgb(169, 94, 239), rgb(238, 195, 57), rgb(251, 85, 171));
             background-clip: text;
