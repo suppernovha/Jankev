@@ -8,6 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Notable&family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">	</head>
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/config.js" defer></script>
 
     <body>
         <header class="header header--lightgradient">
@@ -18,7 +21,7 @@
             </div>
             <nav>
                 <ul  class="header__ul">
-                    <a href="accueil.html"><li class="header__li">ACCUEIL</li></a>
+                    <a href="index.html"><li class="header__li">ACCUEIL</li></a>
                     <a href="bio.html"><li class="header__li">BIO</li class="header__li"></a>
                     <a href="discotropic.html"><li class="header__li header__li--pop">DISCOTROPIC</li></a>
                     <a href="podcasts.html"><li class="header__li">PODCASTS</li></a>
@@ -32,14 +35,14 @@
                 <div class="booking main-padding">
                     <div class="booking__txt">
                         <h3 class="booking__title">CONTACTS</h3>
-                        <p><span>Adresse postale :</span>                            <br/><br/>
+                        <p><span>Adresse postale :</span><br/>
                             Jankev a.k.a. Thomas GUEZOU<br/>
                             Disco Tropic<br/>
                             2 allée Auguste Louis Jobbé Duval<br/>
                             35000 RENNES<br/><br/>
-                            <span>Demandes par mail (interviews, booking…) :</span><br/><br/>
+                            <span>Demandes par mail (interviews, booking…) :</span><br/>
                             contact@lesoreillesdejankev.com<br/><br/>
-                            <span>Résaux sociaux :</span><br/><br/>
+                            <span>Résaux sociaux :</span><br/>
                             Instagram<br/>
                             Facebook<br/>
                             Soundcloud<br/>
@@ -48,17 +51,17 @@
                     <form action="" method="get" class="form" id="ancrage">
                         <div class="form__row">
                             <div class="form__column">
-                                <label for="name" class="form__label">Nom</label>
-                                <input class="txt-zone" type="text" name="name" required>
+                                <label for="name" class="form__label name-label">Nom<span class="span"></span></label>
+                                <input class="txt-zone name-input txtSample" type="text" name="name" value="tapez votre nom ici" onclick="effacerTxtInput(this)" required>
                             </div>
                             <div class="form__column">
-                                <label for="email" class="form__label">Email</label>
-                                <input class="txt-zone" type="email" name="email" required>
+                                <label for="email" class="form__label email-label">Email<span class="span"></span></label>
+                                <input class="txt-zone email-input txtSample" type="email" name="email" value="monemail@domaine.com" onclick="effacerTxtInput(this)" required>
                             </div>
                         </div>
                         <div class="form__column">
-                            <label for="name" class="form__label">Message</label>
-                            <textarea class="txt-zone" rows="16" name="message" id="message"></textarea>
+                            <label for="name" class="form__label message-label">Message<span class="span"></span></label>
+                            <textarea class="txt-zone__message message-input txtSample" rows="16" name="message" onclick="effacerTxtInput(this)" id="message">tapez votre message ici</textarea>
                             <input type="submit" value="ENVOYER" class="form__submit">
                         </div>
                     </form>

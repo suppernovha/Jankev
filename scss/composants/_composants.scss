@@ -2,19 +2,21 @@
 
 .bouton {
     position: absolute;
+    right: 32px;
+    bottom: 2px;
     background-color: $color-primary;
     text-align: center;
     font-weight: bold;
     border-radius: $button-radius;
     padding: 1rem 2.5rem 1rem 2.5rem;
     font-size: 1.3rem;
-    right: 10%;
     @include button-shadow;
     transition-property: transform;
     transition-duration: 200ms;
     @include button-shadow;
     &--accueil {
-        right: 42%;
+        right: 45%;
+        bottom: -10px;
     }
     &--basic {
         
@@ -30,7 +32,7 @@
     display: flex;
     flex-direction: column;
     width: 60%;
-    padding-top: 4rem;
+    padding-top: 3rem;
 
     &__row {
     display: flex;
@@ -64,15 +66,29 @@
         outline: none;
         border: white;
         transition: background-color 500ms;
+        border: 2px white solid;
+        border-radius: 10px;
         &:focus {
             border: 2px solid $color-primary;
         }
-        &:not(:focus):invalid {
-            background: rgb(221, 221, 221);
-            color: $color-txt2;
+        &__message {
+            border: 2px white solid;
+            border-radius: 10px;
+            height: 200px;
+            padding: 15px;
+            &:focus {
+                border: 2px solid $color-primary;
+                padding: 15px;
+                outline: none;
+            }
         }
-    
+        &--error {
+            border: 2px rgb(255, 0, 0) solid;
+            animation: errorMove 100ms 3 ease-in-out;
+        }
+        &--error:focus {
+            border: 2px rgb(255, 0, 0) solid;
+        }
     }
-
 }
 

@@ -8,6 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Notable&family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/config.js" defer></script>
     </head>
 
     <body>
@@ -19,7 +22,7 @@
             </div>
             <nav>
                 <ul  class="header__ul">
-                    <a href="accueil.html"><li class="header__li">ACCUEIL</li></a>
+                    <a href="index.html"><li class="header__li">ACCUEIL</li></a>
                     <a href="bio.html"><li class="header__li">BIO</li class="header__li"></a>
                     <a href="discotropic.html"><li class="header__li header__li--active">DISCOTROPIC</li></a>
                     <a href="podcasts.html"><li class="header__li">PODCASTS</li></a>
@@ -31,6 +34,7 @@
         <main>
             <section id="discotropic-pres">
                 <!-- <img src="medias/images/TV.png" class="tv"> -->
+                <div><video autoplay muted class="disco-ball"><source src="medias/videos/disco-ball.mov" type="video/mp4"></video></div> <!-- ajouter autoplay controls et loop à la place de paused -->
                 <div class="discotropic-title">
                     <div class="discotropic-title__row">
                         <h3 id="discotropic-title__nuits">Les<br/>Nuits</h3>
@@ -122,7 +126,7 @@
                     <a href="" class="body--light"><li>Mix 2022</li></a>
                     <a href="" class="body--light"><li>Mix 2021</li></a>
                     <a href="" class="body--light"><li>Mix 2020</li></a>
-                    <a href="" class="body--light"><li>Mix 2019</li></a>
+                    <a href="#2019" class="body--light"><li>Mix 2019</li></a>
                     <a href="" class="body--light"><li>Mix 2018</li></a>  
                     <a href="" class="body--light"><li>Mix 2017</li></a>            
                 </ul>
@@ -137,17 +141,17 @@
                                 <p class="body--light">17/05/23</p>
                             </div>
                         </div>
-                        <p class="body--light">Description du mix avec toutes les infos qui donnent envie d'aller écouter et de venir à toutes les soirées</p>
+                        <p class="body--light mix__description">Description du mix avec toutes les infos qui donnent envie d'aller écouter et de venir à toutes les soirées</p>
                     </div>
                     <div class="mix__prev">
                         <a href=""><img src="medias/images/mix/MixDT2.jpg" alt="Illustration du mix Discotropic" class="mix__cover"></a>
                         <div class="mix__title">
                             <div class="mix__prev--title">
-                                <p class="body--light">MIX #01</p>
+                                <p class="body--light">MIX #40</p>
                                 <p class="body--light">17/05/23</p>
                             </div>
                         </div>
-                        <p class="body--light">This mixtape include awesome tracks of : @deejaygeedee, @paulolder, @alexnymusic, @thevelvetstripes, @monsieurvanpratt, @superflat1990, @arthur-baker-official, @andromedaorchestra, @mooningemini-music, @mata-joness/tracks, @ronny-hammond, @bosqmusic and many more !</p>
+                        <p class="body--light mix__description">This mixtape include awesome tracks of : @deejaygeedee, @paulolder, @alexnymusic, @thevelvetstripes, @monsieurvanpratt, @superflat1990, @arthur-baker-official, @andromedaorchestra, @mooningemini-music, @mata-joness/tracks, @ronny-hammond, @bosqmusic and many more !</p>
                     </div>
                     <div class="mix__prev">
                         <a href=""><img src="medias/images/mix/MixDT7.jpg" alt="Illustration du mix Discotropic" class="mix__cover"></a>
@@ -184,7 +188,7 @@
                         <div class="mix__title">
                             <div class="mix__prev--title">
                                 <p class="body--light">MIX #01</p>
-                                <p class="body--light">17/05/23</p>
+                                <p id="2019" class="body--light">17/05/23</p>
                             </div>
                         </div>
                         <p class="body--light">Description du mix avec toutes les infos qui donnent envie d'aller écouter et de venir à toutes les soirées</p>

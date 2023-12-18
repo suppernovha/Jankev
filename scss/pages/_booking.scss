@@ -12,3 +12,32 @@
         margin-bottom: 2rem;
     }
 }
+
+.input-background {
+    background-color: rgb(255, 211, 135);
+}
+
+// En cas de saisie erronée (mise en forme et animation dans composants.scss ligne 84
+@keyframes errorMove {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(6px);
+    }
+    100% {
+      transform: translateX(0);
+  }}
+
+.span {
+font-style: italic;
+font-weight: 300;
+color: red;
+font-size: 12px;
+}
+
+.txtSample {
+    color: rgb(196, 196, 196);
+    font-style: italic;
+    font-weight: 100;
+}

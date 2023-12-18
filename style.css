@@ -66,20 +66,22 @@ span {
 /* Bouton présent sur plusieurs pages */
 .bouton {
   position: absolute;
+  right: 32px;
+  bottom: 2px;
   background-color: #f7a006;
   text-align: center;
   font-weight: bold;
   border-radius: 30px;
   padding: 1rem 2.5rem 1rem 2.5rem;
   font-size: 1.3rem;
-  right: 10%;
   box-shadow: 0.2rem 0.2rem 0.5rem black;
   transition-property: transform;
   transition-duration: 200ms;
   box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
 .bouton--accueil {
-  right: 42%;
+  right: 45%;
+  bottom: -10px;
 }
 .bouton:hover {
   transform: scale(1.1);
@@ -90,7 +92,7 @@ span {
   display: flex;
   flex-direction: column;
   width: 60%;
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 .form__row {
   display: flex;
@@ -124,13 +126,29 @@ span {
   outline: none;
   border: white;
   transition: background-color 500ms;
+  border: 2px white solid;
+  border-radius: 10px;
 }
 .form .txt-zone:focus {
   border: 2px solid #f7a006;
 }
-.form .txt-zone:not(:focus):invalid {
-  background: #dddddd;
-  color: #ffffff;
+.form .txt-zone__message {
+  border: 2px white solid;
+  border-radius: 10px;
+  height: 200px;
+  padding: 15px;
+}
+.form .txt-zone__message:focus {
+  border: 2px solid #f7a006;
+  padding: 15px;
+  outline: none;
+}
+.form .txt-zone--error {
+  border: 2px red solid;
+  animation: errorMove 100ms 3 ease-in-out;
+}
+.form .txt-zone--error:focus {
+  border: 2px red solid;
 }
 
 .header {
@@ -207,8 +225,8 @@ span {
 /* Manque le lien surligné de la page en cours */
 .footer {
   Background-color: black;
-  height: 8rem;
-  margin-top: 8rem;
+  height: 5rem;
+  margin-top: 6rem;
 }
 .footer__ul {
   display: flex;
@@ -256,6 +274,7 @@ span {
 
 .main-page {
   padding-top: 2rem;
+  position: relative;
 }
 .main-page__header {
   display: flex;
@@ -266,7 +285,7 @@ span {
 }
 .main-page__title {
   position: absolute;
-  top: 41%;
+  top: 25%;
   color: #f7a006;
   font-size: 5.875rem;
 }
@@ -278,22 +297,23 @@ span {
 
 .jankev-bio {
   position: absolute;
-  top: -80px;
-  left: 200px;
+  width: 78.5%;
+  top: -20px;
+  right: 0;
   z-index: -2;
   opacity: 0.3;
 }
 
 .main-intro {
   padding-bottom: 10rem;
-  width: 60%;
+  width: 50%;
 }
 
 .bio {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 10rem;
+  gap: 140px;
+  margin-bottom: 7rem;
 }
 .bio__txt {
   width: 40%;
@@ -302,9 +322,16 @@ span {
   background-color: black;
   width: 40%;
 }
+.bio__txt {
+  width: 45%;
+}
 
 .festivals h3 {
   margin-bottom: 1rem;
+}
+
+.festivals {
+  position: relative;
 }
 
 .booking {
@@ -322,11 +349,49 @@ span {
   margin-bottom: 2rem;
 }
 
+.input-background {
+  background-color: #ffd387;
+}
+
+@keyframes errorMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.span {
+  font-style: italic;
+  font-weight: 300;
+  color: red;
+  font-size: 12px;
+}
+
+.txtSample {
+  color: #c4c4c4;
+  font-style: italic;
+  font-weight: 100;
+}
+
 .disco-bg {
   position: fixed;
   width: 100%;
   opacity: 1p;
   z-index: -2;
+}
+
+.disco-ball {
+  width: 30%;
+  position: absolute;
+  right: 16%;
+  bottom: -30px;
+  rotate: 90deg;
+  border-radius: 30px;
+  border: 15px solid #f7a006;
 }
 
 #discotropic-pres {
@@ -339,11 +404,11 @@ span {
   border-top-left-radius: 30px;
 }
 #discotropic-pres p {
-  width: 50%;
+  width: 35%;
 }
 
 .discotropic-title {
-  padding-bottom: 13rem;
+  padding-bottom: 9rem;
   color: #f7a006;
 }
 .discotropic-title__row {
@@ -371,6 +436,7 @@ span {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  max-width: 1017px;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
   gap: 1.8rem;
@@ -403,12 +469,13 @@ span {
   padding: 0rem 2rem 0rem 2rem;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  height: 80vh;
 }
 
 .mix {
   display: flex;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 8rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #ffffff;
   font-size: 1.3rem;
@@ -425,6 +492,10 @@ span {
   width: 100%;
   margin-bottom: 0.5rem;
   position: relative;
+}
+.mix__description {
+  max-height: 110px;
+  overflow: scroll;
 }
 .mix__prev {
   min-width: 15rem;

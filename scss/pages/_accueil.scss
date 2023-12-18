@@ -16,6 +16,7 @@
 
 .main-page {
     padding-top: 2rem;
+    position: relative;
     &__header {
         display: flex;
         justify-content: center;
@@ -25,7 +26,7 @@
     }
     &__title {
         position: absolute;
-        top: 41%;
+        top: 25%;
         color: $color-primary;
         font-size: 5.875rem;
     }
